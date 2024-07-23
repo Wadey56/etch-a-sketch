@@ -13,8 +13,18 @@ for (let i = 0; i < 16; i++) {
 
         // event listener for mouse over 
         square.addEventListener("mouseenter", () => {
-            console.log("Works")
+            draw(square);
         })
     }
     container.appendChild(row);
+}
+
+function draw(square) {
+
+    // generate random colour
+    let red = Math.floor(Math.random() * 255 + 1);
+    let green = Math.floor(Math.random() * 255 + 1);
+    let blue = Math.floor(Math.random() * 255 + 1);
+
+    square.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
