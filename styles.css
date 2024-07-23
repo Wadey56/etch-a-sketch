@@ -1,0 +1,20 @@
+div {
+    border: 1px solid red;
+    height: 20px;
+    width: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: fit-content;
+}
