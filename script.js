@@ -52,3 +52,11 @@ editGridBtn.addEventListener("click", function changeGrid() {
     }
     drawGrid(gridSize);
 })
+
+let eraseGridBtn = document.querySelector("#eraseGridBtn");
+eraseGridBtn.addEventListener("click", () => {
+    squareNodeListArray = Array.from(document.getElementsByClassName("square"));
+    squareNodeListArray.forEach((square) => {
+        square.style.backgroundColor = `rgb(255,255,255)`;
+    })
+})
