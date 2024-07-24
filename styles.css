@@ -5,10 +5,16 @@
     align-items: center;
     height: 500px;
     width: fit-content;
+    border: 1px solid black;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     width: auto;
+}
+
+.square {
+    box-sizing: border-box;
+    border: 1px dotted black;
 }
